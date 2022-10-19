@@ -3,6 +3,7 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
 import { images } from '../../constants';
+import { SocialMedia } from "../"
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -21,6 +22,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <SocialMedia/>
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />

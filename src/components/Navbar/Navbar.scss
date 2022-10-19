@@ -171,4 +171,8 @@
   @media screen and (min-width: 900px) {
     display: none;
   }
+
+  @media screen and (max-width: 900px) {
+    right: -20px;
+  }
 }

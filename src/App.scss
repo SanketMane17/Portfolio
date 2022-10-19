@@ -97,20 +97,17 @@
     }
 }
 
-.app__social {
+.app__navbar-social {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-direction: column;
-
-    padding: 1rem;
 
     div {
         width: 40px;
         height: 40px;
         border-radius: 50%;
         background-color: var(--white-color);
-        margin: 0.25rem 0;
+        margin: 0 0.3em !important;
         border: 1px solid var(--lightGray-color);
 
         display: flex;
@@ -179,8 +176,7 @@
 
 @media screen and (max-width: 500px) {
 
-    .app__navigation,
-    .app__social {
+    .app__navigation {
         display: none;
     }
 

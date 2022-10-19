@@ -3,7 +3,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const SocialMedia = () => (
-    <div className="app__social">
+    <div className="app__social app__navbar-social">
         <div>
             <a
                 href="https://github.com/SanketMane17"
