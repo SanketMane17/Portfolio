@@ -5,12 +5,19 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const SocialMedia = () => (
     <div className="app__social">
         <div>
-            <a href="https://github.com/SanketMane17" target="_blank">
+            <a
+                href="https://github.com/SanketMane17"
+                style={{ height: "20px" }}
+                target="_blank">
                 <GitHubIcon />
             </a>
         </div>
         <div>
-            <a href="https://www.linkedin.com/in/sanket-mane-016/" target="_blank">
+            <a
+                href="https://www.linkedin.com/in/sanket-mane-016/"
+                style={{ height: "20px" }}
+                target="_blank"
+            >
                 <LinkedInIcon />
             </a>
         </div>
