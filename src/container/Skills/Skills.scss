@@ -1,7 +1,7 @@
 .app__skills {
-    flex: 1;
+    flex: 1 1;
     width: 100%;
-    flex-direction: column;
+    align-items: flex-start;
 }
 
 .app__skills-container {
@@ -14,6 +14,14 @@
     @media screen and (max-width: 900px) {
         width: 100%;
         flex-direction: column;
+
+        .app__exp {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
     }
 }
 
@@ -24,7 +32,7 @@
     justify-content: center;
     align-items: center;
 
-    // margin-right: 5rem;
+    margin-right: 5rem;
 
     @media screen and (max-width: 900px) {
         margin-right: 0;
@@ -45,7 +53,7 @@
         width: 90px;
         height: 90px;
         border-radius: 50%;
-        background-color: var(--white-color);
+        background-color: #f0f0f0;
 
         img {
             width: 50%;
@@ -78,5 +86,80 @@
         p {
             margin-top: 1rem;
         }
+    }
+}
+
+.app__skills-exp {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1rem auto;
+
+    @media screen and (max-width: 900px) {
+        margin-top: 2rem;
+    }
+}
+
+.app__skills-exp-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.app__skills-exp-works {
+    flex: 1;
+
+    .app__skills-exp-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        cursor: pointer;
+
+        h4 {
+            font-weight: 500;
+        }
+
+        p {
+            font-weight: 400;
+            color: var(--gray-color);
+            margin-top: 5px;
+        }
+    }
+}
+
+.app__skills-exp-year {
+    margin-right: 3rem;
+
+    p {
+        font-weight: 800;
+        color: var(--secondary-color);
+    }
+
+    @media screen and (max-width: 450px) {
+        margin-right: 1rem;
+    }
+}
+
+.skills-tooltip {
+    max-width: 300px !important;
+    background-color: var(--white-color) !important;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 5px !important;
+    padding: 1rem !important;
+    color: var(--gray-color) !important;
+    text-align: center !important;
+    line-height: 1.5 !important;
+    opacity: 1 !important;
+
+    @media screen and (min-width: 2000px) {
+        font-size: 1.75rem !important;
+        max-width: 500px !important;
+        line-height: 2 !important;
     }
 }
