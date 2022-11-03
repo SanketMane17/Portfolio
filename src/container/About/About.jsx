@@ -12,6 +12,7 @@ const About = () => {
     const query = '*[_type == "abouts"]';
 
     client.fetch(query).then((data) => {
+      data.sort((obj1, obj2) => obj1.serialNumber - obj2.serialNumber);
       setAbouts(data);
     });
   }, []);

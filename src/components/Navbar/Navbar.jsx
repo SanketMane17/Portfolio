@@ -22,12 +22,10 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <SocialMedia/>
+      <SocialMedia />
 
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
-
-        {toggle && (
+        {toggle ? (
           <motion.div
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -43,6 +41,11 @@ const Navbar = () => {
               ))}
             </ul>
           </motion.div>
+        ) : (
+          <HiMenuAlt4 onClick={
+            () => {
+              setToggle(true);
+            }} />
         )}
       </div>
     </nav>
