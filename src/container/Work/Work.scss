@@ -149,12 +149,13 @@
       border-radius: 3px;
       padding: 4px 9px;
       box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-      color: var(--secondary-color);
+      background-color: var(--secondary-color);
+      color: white;
       
-      &:hover {
-        background-color: var(--secondary-color);
-        color: var(--white-color);
-      }
+      // &:hover {
+      //   background-color: var(--secondary-color);
+      //   color: var(--white-color);
+      // }
     }
   }
 

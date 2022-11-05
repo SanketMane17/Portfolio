@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">I Know that <span>Good Dev</span> <br />means  <span>Good Business</span></h2>
+      <h2 className="head-text">About <span>Me</span></h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -31,11 +31,30 @@ const About = () => {
             key={about.title + index}
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
-            <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
+            <h2 className='about-title' style={{ marginTop: 20 }}>{about.title}</h2>
+            {/* <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p> */}
           </motion.div>
         ))}
       </div>
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        className="app__achivements">
+        <div className='item'>
+          <h2>15</h2>
+          <p style={{ textAlign: "center", color: "white" }} className='bold-text'>Verified Skills</p>
+        </div>
+        <div className='vertical-line' />
+        <div className='item'>
+          <h2>6</h2>
+          <p style={{ textAlign: "center", color: "white" }} className='bold-text'>Professional Projects</p>
+        </div>
+        <div className='vertical-line' />
+        <div className='item'>
+          <h2>100+</h2>
+          <p style={{ textAlign: "center", color: "white" }} className='bold-text'>DSA Problems Solved</p>
+        </div>
+      </motion.div>
     </>
   );
 };

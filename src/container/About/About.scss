@@ -15,8 +15,6 @@
 .app__profile-item {
     width: 190px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex-direction: column;
     margin: 2rem;
 
@@ -27,6 +25,13 @@
         object-fit: cover;
     }
 
+    .about-title {
+        font-size: 1rem;
+        font-weight: 800;
+        color: var(--black-color);
+        text-align: center;
+    }
+
     @media screen and (min-width: 2000px) {
         width: 370px;
         margin: 2rem 4rem;
@@ -34,5 +39,28 @@
         img {
             height: 320px;
         }
+    }
+}
+
+.app__achivements {
+    display: flex;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 15px;
+
+    .item {
+        text-align: center;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    .vertical-line {
+        height: 100%;
+        width: 1px;
+        background: var(--white-color);
+    }
+
+    @media screen and(max-width: 745px) {
+        flex-direction: column;
     }
 }

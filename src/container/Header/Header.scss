@@ -167,7 +167,7 @@
 
 .app__header-img {
   flex: 1;
-  height: 90%;
+  // height: 90%;
 
   display: flex;
   justify-content: center;
@@ -175,31 +175,22 @@
   position: relative;
 
   img {
-    width: 90%;
-    z-index: 1;
-  }
-
-  .overlay_circle {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    width: 100%;
-    height: 90%;
+    width: 55%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
 
   @media screen and (max-width: 1200px) {
     margin: 2rem 0;
 
-    .overlay_circle {
-      height: 100%;
+    img {
+      width: 60%;
     }
   }
 
   @media screen and (max-width: 1800px) and (min-width: 1560px)  {
     img {
-      width: 77%;
+      width: 60%;
     }
   }
 }
