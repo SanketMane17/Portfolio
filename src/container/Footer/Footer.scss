@@ -3,6 +3,13 @@
     width: 100%;
     flex-direction: column;
 
+    @media screen and(min-width: 450px) {
+
+        .head-text {
+            margin-top: 95px;
+        }
+    }
+
     @media screen and (max-width: 768px) {
         flex-direction: column;
     }
@@ -89,7 +96,7 @@
             padding: 0.95rem;
             border: none;
             border-radius: 7px;
-            background-color: var(--primary-color);
+            background-color: #ffffff;
 
             font-family: var(--font-base);
             color: var(--secondary-color);
@@ -99,20 +106,16 @@
         textarea {
             height: 170px;
         }
-
-        &:hover {
-            box-shadow: 0 0 25px var(--primary-color);
-        }
     }
 
     .btn {
         padding: 1rem 2rem;
         border-radius: 10px;
         border: none;
-        background-color: var(--secondary-color);
+        background-color: #74e6ff;
 
         font-weight: 500;
-        color: var(--white-color);
+        color: var(--black-color);
         outline: none;
         margin: 2rem 0 0 0;
         font-family: var(--font-base);
@@ -121,7 +124,8 @@
         cursor: pointer;
 
         &:hover {
-            background-color: #2430af;
+            background-color: #8088fd;
+            color: var(--primary-color);
         }
     }
 

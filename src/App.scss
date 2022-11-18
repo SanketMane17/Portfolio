@@ -1,5 +1,4 @@
 .app {
-    background-color: var(--primary-color);
     font-family: var(--font-base);
 }
 
@@ -17,6 +16,8 @@
 
     display: flex;
     flex-direction: row;
+    
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
 }
 
 .app__flex {
@@ -29,7 +30,6 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    padding: 4rem 2rem;
 
     @media screen and (max-width: 450px) {
         padding: 4rem 1rem 2rem;
@@ -59,7 +59,7 @@
     text-transform: capitalize;
 
     span {
-        color: var(--secondary-color);
+        color: #fffffff5;
     }
 
     @media screen and (min-width: 2000px) {
@@ -151,20 +151,19 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     padding: 1rem;
 
     .app__navigation-dot {
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: #cbcbcb;
+        background-color: #ffffff;
         margin: 0.5rem;
 
         transition: background-color 0.2s ease-in-out;
 
         &:hover {
-            background-color: var(--secondary-color);
+            background-color: #5c4d9dde;
         }
 
         @media screen and (min-width: 2000px) {

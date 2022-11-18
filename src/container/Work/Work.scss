@@ -2,6 +2,10 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
+
+  .head-text {
+    margin-top: 95px;
+  }
 }
 
 .app__work-filter {
@@ -25,8 +29,8 @@
     margin: 0.5rem;
 
     &:hover {
-      background-color: var(--secondary-color);
-      color: #fff;
+      background-color: #8088fd;
+      color: white;
     }
 
     @media screen and (min-width: 2000px) {
@@ -36,8 +40,8 @@
   }
 
   .item-active {
-    background-color: var(--secondary-color);
-    color: #fff;
+    background-color: #8088fd;
+    color: white;
   }
 }
 
@@ -151,7 +155,7 @@
       box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
       background-color: var(--secondary-color);
       color: white;
-      
+
       // &:hover {
       //   background-color: var(--secondary-color);
       //   color: var(--white-color);
