@@ -29,8 +29,8 @@
     margin: 0.5rem;
 
     &:hover {
-      background-color: #8088fd;
-      color: white;
+      background-color: #7d9aff;
+      color: rgb(255, 255, 255);
     }
 
     @media screen and (min-width: 2000px) {
@@ -40,8 +40,8 @@
   }
 
   .item-active {
-    background-color: #8088fd;
-    color: white;
+    background-color: #7d9aff;
+    color: rgb(255, 255, 255);
   }
 }
 
@@ -150,16 +150,18 @@
     a {
       text-align: center;
       text-decoration: none;
-      border-radius: 3px;
-      padding: 4px 9px;
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-      background-color: var(--secondary-color);
-      color: white;
 
-      // &:hover {
-      //   background-color: var(--secondary-color);
-      //   color: var(--white-color);
-      // }
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      background-color: #fff;
+      color: #000;
+      font-weight: 800;
+
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+      background-color: #3f49b7;
+      color: white;
     }
   }
 

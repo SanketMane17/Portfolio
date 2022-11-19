@@ -66,8 +66,9 @@
     border-radius: 15px;
     flex-direction: row;
     width: auto;
+    border: 2px dotted #7f91fe;
 
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   }
 
   .tag-cmp {
@@ -110,7 +111,8 @@
     border-radius: 50%;
 
     background: var(--white-color);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border: 2px dotted #7f91fe;
 
     img {
       width: 60%;
@@ -177,7 +179,8 @@
   img {
     width: 55%;
     border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.20);
+    border: 2px dotted #7f91fe;
   }
 
   @media screen and (max-width: 1200px) {
