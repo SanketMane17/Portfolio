@@ -8,7 +8,7 @@ const SocialMedia = () => (
             <a
                 href="https://github.com/SanketMane17"
                 style={{ height: "20px" }}
-                target="_blank">
+                target="_blank" rel="noreferrer">
                 <GitHubIcon />
             </a>
         </div>
@@ -17,6 +17,7 @@ const SocialMedia = () => (
                 href="https://www.linkedin.com/in/sanket-mane-016/"
                 style={{ height: "20px" }}
                 target="_blank"
+                rel="noreferrer"
             >
                 <LinkedInIcon />
             </a>
