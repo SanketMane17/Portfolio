@@ -21,7 +21,7 @@ const Navbar = () => {
       <ul className="app__navbar-links">
         {['home', 'about', 'projects', 'skills', 'contact'].map((item) => (
           <li className="app__flex p-text flex !flex-row gap-2" key={`link-${item}`}>
-            {checkSelectedSection(item) &&  <span class="w-[5px] h-[5px] bg-black rounded-full"></span>}
+            {checkSelectedSection(item) &&  <span className="w-[5px] h-[5px] bg-black rounded-full"></span>}
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}
