@@ -13,7 +13,7 @@
 }
 
 .app__profile-item {
-    width: 190px;
+   max-width: 350px;
     display: flex;
     flex-direction: column;
     margin: 2rem;
@@ -26,7 +26,7 @@
     }
 
     .about-title {
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 800;
         color: var(--black-color);
         text-align: center;

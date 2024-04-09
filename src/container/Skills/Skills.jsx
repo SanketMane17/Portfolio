@@ -15,6 +15,7 @@ const Skills = () => {
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
+      data.sort((obj1, obj2) => obj1.serialNumber - obj2.serialNumber);
       setExperiences(data);
     });
 
@@ -43,7 +44,7 @@ const Skills = () => {
                 >
                   <img src={urlFor(skill.icon)} alt={skill.name} />
                 </div>
-                <p className="p-text">{skill.name}</p>
+                <p className="p-text !text-black">{skill.name}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -54,11 +55,11 @@ const Skills = () => {
           <div className="app__skills-exp">
             {experiences.map((experience) => (
               <motion.div
-                className="app__skills-exp-item"
+                className="app__skills-exp-item flex !flex-col"
                 key={experience.year}
               >
                 <div className="app__skills-exp-year">
-                  <p className="bold-text">{experience.year}</p>
+                  <p className="bold-text mb-2">{experience.year}</p>
                 </div>
                 <motion.div className="app__skills-exp-works">
                   {experience.works.map((work) => (
