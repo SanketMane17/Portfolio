@@ -1,7 +1,7 @@
-import React from "react";
+import { PictureAsPdf } from "@mui/icons-material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { DocumentScannerOutlined, PictureAsPdf } from "@mui/icons-material";
+import React from "react";
 
 const SocialMedia = () => (
   <div className="app__social app__navbar-social">

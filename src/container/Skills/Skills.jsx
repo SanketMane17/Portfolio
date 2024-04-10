@@ -92,6 +92,7 @@ const Skills = () => {
                             className="text-[14px] bg-[var(--secondary-color)] px-4 py-1 rounded-full text-white hover:cursor-pointer"
                             target="_blank"
                             href={work.refLink}
+                            rel="noreferrer"
                           >
                             Reference
                           </a>
