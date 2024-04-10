@@ -49,7 +49,7 @@ const Skills = () => {
           </motion.div>
         </div>
 
-        <div className="ps-20 pe-10 app__exp app__skills-section">
+        <div className="ps-[50px] pe-10 app__exp app__skills-section">
           <h2 className="head-text mb-14">Experiences</h2>
           <motion.div
             className="relative border-s border-gray-200 dark:border-gray-700"
