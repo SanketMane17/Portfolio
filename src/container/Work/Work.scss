@@ -29,7 +29,7 @@
     margin: 0.5rem;
 
     &:hover {
-      background-color: #7d9aff;
+      background-color: var(--secondary-color);
       color: rgb(255, 255, 255);
     }
 
@@ -40,7 +40,7 @@
   }
 
   .item-active {
-    background-color: #7d9aff;
+    background-color: var(--secondary-color);
     color: rgb(255, 255, 255);
   }
 }
